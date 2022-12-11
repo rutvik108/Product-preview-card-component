@@ -1,0 +1,77 @@
+
+*{
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px; 
+    padding: 10%;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+    text-align: left;
+}
+img{
+    max-width:300px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px
+}
+.product-desc{
+    padding:30px;
+    background-color: white;
+    border-top-right-radius:20px;
+    border-bottom-right-radius: 20px
+    
+}
+.category{
+  font-family: Montserrat;
+  color:#454545;
+}
+p{
+    display:block ;
+    color: #454545;
+}
+.prices{
+display: block;
+margin-bottom: 20px ;
+}
+.sale-price{
+    font-size:1.5rem;
+    font-weight: bold;
+    color:#3e9c35;
+    margin-right: 30px;
+}
+.list-price{
+ text-decoration: line-through;
+}
+button{
+width: 90%;
+height: 50px;
+color: white;
+background-color: #3e9c35;
+border-radius: 200px;
+}
+
+@media (max-width:1000px){
+section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 300px;
+}
+img{
+    border-radius: 20px;
+}
+.product-desc{
+    border-radius: 20px;
+}
+}
